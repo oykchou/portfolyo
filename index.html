@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Archive | Mimarlık</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ 
+    <div class="top-ticker">
+        <span>★ ARCHITECTURE & DESIGN</span>
+        <span>ARCHIVE_2026</span>
+        <span>ISTANBUL, TR ✦</span>
+    </div>
+
+   
+    <header class="hero">
+        <h1>Portfolio <i>Archive</i></h1>
+        <p>İncelemek istediğin dosya sekmesine tıkla.</p>
+    </header>
+
+   
+    <main class="folder-stack">
+
+        <!-- Kenar Parıltı Stickerları -->
+        <svg class="sticker st-star-right" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 6 L48 32 L74 40 L48 48 L40 74 L32 48 L6 40 L32 32 Z" fill="#d2ff66" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M40 6 L48 32 L74 40 L48 48 L40 74 L32 48 L6 40 L32 32 Z" fill="#d2ff66" stroke="#18181b" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+
+        <svg class="sticker st-star-left" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 6 L48 32 L74 40 L48 48 L40 74 L32 48 L6 40 L32 32 Z" fill="#ffb8e0" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M40 6 L48 32 L74 40 L48 48 L40 74 L32 48 L6 40 L32 32 Z" fill="#ffb8e0" stroke="#18181b" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+
+       
+        <section class="folder active" style="--folder-bg: #ffffff; --tab-left: 0%;" onclick="selectFolder(0)">
+            <div class="folder-tab">01. HAKKIMDA</div>
+            <div class="folder-body">
+                <div class="content-grid">
+                    
+                    <div class="photo-wrapper">
+                        <svg class="paperclip" viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 30V88C22 96.8366 29.1634 104 38 104C46.8366 104 54 96.8366 54 88V24C54 11.8497 44.1503 2 32 2C19.8497 2 10 11.8497 10 24V84C10 99.464 22.536 112 38 112" stroke="#64748b" stroke-width="4.5" stroke-linecap="round"/>
+                            <path d="M20 30V88C20 96.8366 27.1634 104 36 104" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+                        </svg>
+
+                        <div class="polaroid">
+                            <img src="ben.jpeg" alt="Profil Fotoğrafım">
+                            <span class="caption">✦</span>
+                        </div>
+                    </div>
+
+                    <div class="text-area">
+                        <span class="mini-badge">ABOUT ME // 01</span>
+                        <h2>Merhaba, ben <i>Öykü!</i></h2>
+                        <p>Mimarlık 3. sınıf öğrencisi olarak mekân kurgusu, atmosfer yaratımı ve görsel anlatım üzerine çalışıyorum. Tasarım sürecinde analitik çözümleri insan ölçeğindeki sıcak deneyimlerle birleştirmeyi; eskiz, çizim ve dijital temsil araçlarıyla fikirlerimi somutlaştırmayı seviyorum.</p>
+                        <p>Çizim masası dışında kalan zamanlarda hayvanlarla, özellikle kedilerle, vakit geçirmekten büyük keyif alıyorum. Ayrıca görsel kültür, sinema ve mekân üzerine yeni makaleler yazarak düşüncelerimi kelimelerle ifade etme pratiğimi geliştirmeyi hedefliyorum.</p>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="folder" style="--folder-bg: #ffe3f1; --tab-left: 20%;" onclick="selectFolder(1)">
+            <div class="folder-tab">02. TEMSİL & ÇİZİM</div>
+            <div class="folder-body">
+                <span class="mini-badge">REPRESENTATION & FOUNDATION // 02</span>
+                <h2>Tasarım & <i>Temsil</i></h2>
+                
+                <div class="showcase-list">
+                    
+                    
+                    <article class="showcase-card">
+                        <div class="gallery-box" data-images="mtg1.png, mtg2.png, mtg3.png, mtg4.png, mtg5.png, mtg6.png, mtg7.png, mtg8.png, mtg9.png, mtg10.png, mtg11.png">
+                            <img src="mtg1.png" alt="Mimari Tasarıma Giriş" onclick="openLightbox(this.src); event.stopPropagation();">
+                            <button class="gal-btn prev" onclick="changeSlide(this, -1); event.stopPropagation();">‹</button>
+                            <button class="gal-btn next" onclick="changeSlide(this, 1); event.stopPropagation();">›</button>
+                            <span class="slide-counter">1 / 11</span>
+                        </div>
+                        <div class="showcase-info">
+                            <span class="tag">TEMEL TASARIM // STÜDYO</span>
+                            <h3>Mimari Tasarıma Giriş</h3>
+                            <p>Boşluk-doluluk ilişkisi, ışık-gölge dengesi ve soyut mekânsal kurgular üzerine ürettiğim temel tasarım ve maket çalışmaları. Görsellere tıklayarak tam ekran inceleyebilir, oklarla diğer paftalara geçebilirsin.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="showcase-card">
+                        <div class="gallery-box" data-images="mt1.png, mt2.png, mt3.png, mt4.png, mt5.png, mt6.png, mt7.png, mt8.png, mt9.png, mt10.png">
+                            <img src="mt1.png" alt="Mimari Temsil" onclick="openLightbox(this.src); event.stopPropagation();">
+                            <button class="gal-btn prev" onclick="changeSlide(this, -1); event.stopPropagation();">‹</button>
+                            <button class="gal-btn next" onclick="changeSlide(this, 1); event.stopPropagation();">›</button>
+                            <span class="slide-counter">1 / 10</span>
+                        </div>
+                        <div class="showcase-info">
+                            <span class="tag">GÖRSEL ANLATIM // ÇİZİM & KOLAJ</span>
+                            <h3>Mimari Temsil</h3>
+                            <p>Çeşitli mekânların atmosferini, perspektif derinliğini ve hikayelerini aktarmak için ürettiğim serbest el eskizler, aksonometrik çizimler ve deneysel kolaj çalışmaları.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="folder" style="--folder-bg: #dff1ff; --tab-left: 40%;" onclick="selectFolder(2)">
+            <div class="folder-tab">03. PROJELER</div>
+            <div class="folder-body">
+                <span class="mini-badge">ARCHITECTURAL PROJECTS // 03</span>
+                <h2>Mimari <i>Projelerim</i></h2>
+                
+                <div class="showcase-list">
+                    
+                    
+                    <article class="showcase-card">
+                        <div class="gallery-box" data-images="yapı1.png, yapı2.png, yapı3.png, yapı4.png, yapı5.png, yapı6.png, yapı7.png, yapı8.png, yapı9.png, yapı10.png, yapı11.png, yapı12.png">
+                            <img src="yapı1.png" alt="Küçük Konut Projesi" onclick="openLightbox(this.src); event.stopPropagation();">
+                            <button class="gal-btn prev" onclick="changeSlide(this, -1); event.stopPropagation();">‹</button>
+                            <button class="gal-btn next" onclick="changeSlide(this, 1); event.stopPropagation();">›</button>
+                            <span class="slide-counter">1 / 12</span>
+                        </div>
+                        <div class="showcase-info">
+                            <span class="tag">GRUP ÇALIŞMASI // KONUT</span>
+                            <h3>Küçük Konut Projesi</h3>
+                            <p>Grup arkadaşlarımla birlikte tasarladığımız kompakt yaşam birimi. Sınırlı metrekarede esnek kullanım senaryoları, doğal gün ışığı yönelimi ve ortak/özel alan dengesi üzerine kurgulanmıştır.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="showcase-card">
+                        <div class="gallery-box" data-images="maraş1.png, maraş2.png, maraş3.png, maraş4.png">
+                            <img src="maraş1.png" alt="Kahramanmaraş Etüt Salonu ve Kafe" onclick="openLightbox(this.src); event.stopPropagation();">
+                            <button class="gal-btn prev" onclick="changeSlide(this, -1); event.stopPropagation();">‹</button>
+                            <button class="gal-btn next" onclick="changeSlide(this, 1); event.stopPropagation();">›</button>
+                            <span class="slide-counter">1 / 4</span>
+                        </div>
+                        <div class="showcase-info">
+                            <span class="tag">KAMUSAL & SOSYAL MEKÂN // KAHRAMANMARAŞ</span>
+                            <h3>Kahramanmaraş Etüt Salonu ve Kafe</h3>
+                            <p>Kahramanmaraş'ta öğrenciler ve kent kullanıcıları için tasarlanan çok işlevli odaklanma ve sosyalleşme mekânı. </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="folder" style="--folder-bg: #e7f9d7; --tab-left: 60%;" onclick="selectFolder(3)">
+            <div class="folder-tab">04. MAKALE</div>
+            <div class="folder-body">
+                <span class="mini-badge">RESEARCH & ESSAY // 04</span>
+                <h2>Araştırma <i>Yazısı</i></h2>
+                
+                <div class="articles-list">
+                    <article class="article-item">
+                        <div class="article-meta">
+                            <span>DENEME & GÖRSEL ANALİZ</span>
+                            <span>•</span>
+                            <span>SİNEMA & RENK PSİKOLOJİSİ</span>
+                        </div>
+                        <h3>Film Afişleri Üzerinden Duyguların Renkler Üzerinde Etkisi</h3>
+                        <p>
+                            Renkler ve duygular, birbiriyle sürekli etkileşim halinde olan kavramlardır. Renkler, yalnızca görsel bir algı unsuru değil, aynı zamanda bireyin içinde bulunduğu duygusal durumu ifade etmesinde güçlü bir araç olarak işlev görür. Görsel iletişimde, özellikle grafik tasarım ve afişlerde kullanılan renkler, izleyicinin duygu durumunu yönlendirme ve anlam üretme süreçlerinde belirleyici olabilir. Bu çalışmada, renklerin duygular 
+üzerindeki etkisi film afişleri üzerinden incelenmiştir. Toplam 125 katılımcıyla gerçekleştirilen anket çalışmasında, altı temel duyguya (mutluluk, hüzün, korku, öfke, şaşkınlık, tiksinti) karşılık gelen renk tercihleri analiz edilmiştir. Elde edilen sonuçlar, renk-duygu eşleşmelerinin sanıldığı kadar net olmadığını ortaya koymuştur. Özellikle 
+mutluluk gibi çok katmanlı duygularda geniş bir renk dağılımı gözlenmiş; buna karşın öfke ve korku gibi yüksek uyarılma düzeyine sahip duygular daha belirgin renklerle eşleştirilmiştir. Siyah rengin genel olarak baskın tercih edilmesi ise hem afişlerin siyah&beyaz sunulmasıyla oluşan kontrast etkisine hem de bu rengin farklı duygularla 
+ilişkilendirilebilen çok yönlü doğasına bağlanmıştır. Bu bulgular, bireysel algı farklılıklarının duygusal ifadedeki önemini bir kez daha ortaya koymuştur.
+                        </p>
+                        <p>
+                            Görsel iletişim tasarımında rengin yalnızca estetik bir tercih değil, hikâyenin duygusal alt metnini saniyeler içinde aktaran temel bir anlatı aracı olduğu örnek afiş okumalarıyla ortaya konulmuştur.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="folder" style="--folder-bg: #eee6ff; --tab-left: 80%;" onclick="selectFolder(4)">
+            <div class="folder-tab">05. İLETİŞİM</div>
+            <div class="folder-body">
+                <span class="mini-badge">GET IN TOUCH // 05</span>
+                <h2>İletişime <i>Geç</i></h2>
+                <p>Projelerim, çizimlerim veya iş birlikleri hakkında konuşmak için bana e-posta gönderebilir ya da Instagram üzerinden ulaşabilirsin.</p>
+                <div class="contact-links">
+                    <a href="mailto:oykutorren@gmail.com" class="pill-btn lime-pill" onclick="event.stopPropagation();">E-posta Gönder ↗</a>
+                    <a href="https://instagram.com/oykutrrn" target="_blank" class="pill-btn silver-pill" onclick="event.stopPropagation();">Instagram ↗</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <footer class="thankyou-footer">
+        <div class="thankyou-badge">
+            <div class="pink-oval"></div>
+            <div class="thankyou-text">
+                <span class="ty-top">Than<span class="px">k</span></span>
+                <span class="ty-bottom"><span class="px">y</span>ou</span>
+            </div>
+            <span class="ty-sparkle left">✦</span>
+            <span class="ty-sparkle right">✧</span>
+        </div>
+        <p class="copyright">© 2026 — DESIGNED & ARCHIVED WITH CARE</p>
+    </footer>
+
+    
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">×</span>
+        <img id="lightboxImg" src="" alt="Tam Ekran Görsel">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
